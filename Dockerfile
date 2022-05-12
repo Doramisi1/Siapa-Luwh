@@ -25,5 +25,5 @@ RUN pwd
 RUN ls
 
 EXPOSE 5000
-CMD ["npm","start"] #run biasa
+CMD ["pm2-runtime", "index.js"]
 #CMD ["node","index.js", "--db","link Monggodb url"]
