@@ -78,6 +78,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   'nulis': 'MagerNulis & Logo',
   'audio': 'Audio',
   'maker': 'Maker',
+  'gfx': 'Gfx Maker',
   'database': 'Database',
   'quran': 'Al Qur\'an',
   'owner': 'Owner',
