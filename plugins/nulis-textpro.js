@@ -1,7 +1,7 @@
 import axios from 'axios'
 let split = '|'
 let handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command, name }) => {
-if (!effect) throw '*[❗] Bagaimana cara menggunakan perintah ini?*\n_#logo (efek) (teks)_\n*Contoh:*\n_#logo 3d-deep-sea-metal Mystic_\n\n*[❗] Terkadang akan memberitahu Anda bahwa teks lain hilang, penggunaannya adalah sebagai berikut:*\n_#logo (efek) (text1|text2)_\n*Contoh:*\n_#logo Wolf-Logo-Galaxy The|Mystic_\n\ n* _<DAFTAR EFEK/>_*\n\n° #logo ' + effects.map(v => v.title).join('\n° #logo ')
+if (!effect) throw '*[❗] Bagaimana cara menggunakan perintah ini?*\n_.textpro (efek) (teks)_\n*Contoh:*\n_.textpro 3d-deep-sea-metal Mystic_\n\n*[❗] Terkadang akan memberitahu Anda bahwa teks lain hilang, penggunaannya adalah sebagai berikut:*\n_.textpro (efek) (text1|text2)_\n*Contoh:*\n_.textpro Wolf-Logo-Galaxy The|Mystic_\n\ n* _<DAFTAR EFEK/>_*\n\n° .textpro ' + effects.map(v => v.title).join('\n° .textpro ')
 effect = effect.toLowerCase()
 if (!effects.find(v => (new RegExp(v.title, 'gi')).test(effect))) throw `[❗] Efek ${effect} tidak ditemukan di database*`
 let text = txt.replace(new RegExp(effect, 'gi'), '').trimStart()
