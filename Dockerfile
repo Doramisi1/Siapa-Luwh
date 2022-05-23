@@ -1,29 +1,19 @@
-FROM nikolaik/python-nodejs:latest
+FROM node:lts-buster
 
 RUN apt-get update && \
   apt-get install -y \
-  neofetch \
-  chromium \
   ffmpeg \
-  wget \
-  yarn \
-  mc \
-  imagemagick && \
+  imagemagick \
+  webp && \
+  apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
 
 COPY package.json .
-WORKDIR /root/FERDIZ
+
+RUN npm install && npm install qrcode-terminal && npm install pm2 -g 
+
 COPY . .
-ENV TZ=Asia/Jakarta
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
-RUN yarn add sharp
-RUN yarn
-
-
-RUN pwd
-RUN ls
 
 EXPOSE 5000
-CMD ["pm2-runtime", "index.js"]
-#CMD ["node","index.js", "--db","link Monggodb url"]
+
+CMD ["node", "index.js"]
