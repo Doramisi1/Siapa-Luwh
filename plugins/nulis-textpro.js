@@ -14,9 +14,9 @@ responseType: 'arraybuffer'
 })
 await conn.sendFile(m.chat, result.data, 'Error.jpg', `*Kelar*\n*Efek: ${effect}*`, m)
 }
-handler.help = ['logos']
-handler.tags = ['nulis']
-handler.command = /^(logo|logos)$/i
+handler.help = ['textpro']
+handler.tags = ['textpro']
+handler.command = /^(textpro|textpros )$/i
 export default handler
 
 import formData from 'form-data'
