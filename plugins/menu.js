@@ -54,7 +54,7 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	let tags
 	let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'anime', 'update', 'maker', 'gfx', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
+  let arrayMenu = ['all', 'anime', 'update', 'maker', 'gfx', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'textpro', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'Main',
@@ -65,6 +65,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   'kerang': 'Kerang Ajaib',
   'quotes': 'Quotes',
   'fun': 'Fun',
+  'textpro': 'Textpro',
   'anime': 'Anime',
   'admin': 'Admin',
   'group': 'Group',
@@ -138,6 +139,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   if (teks == 'nulis') tags = {
     'nulis': 'Nulis',
     'maker': 'Maker'
+  }
+  if (teks == 'textpro') tags = {
+    'textpro': 'Textpro'
   }
   if (teks == 'downloader') tags = {
     'downloader': 'Downloader'
@@ -235,6 +239,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	{title: `⛩️ ${pmenus} Anime`, rowId: ".? anime", description: "Kamu wibu ya bang?"},
 	{title: `🔞 ${pmenus} Nsfw`, rowId: ".? nsfw", description: "Tch, dasar sagne"},
 	{title: `🌟 ${pmenus} Premium`, rowId: ".? premium", description: "Only premium Users"},
+        {title: `✍️ ${pmenus} Textpro`, rowId: ".? textpro", description: "Membuat Textpro/logo Di Bot"},
 	{title: `🎭 ${pmenus} Anonymous Chats`, rowId: ".? anonymous", description: "Bicara dengan orang tidak dikenal"},
 	{title: `📖 ${pmenus} Al-Quran`, rowId: ".? nocategory", description: "Tobat yuk kak"},
 	{title: `🌎 ${pmenus} Internet`, rowId: ".? internet", description: "Cari sesuatu diBOT"},
