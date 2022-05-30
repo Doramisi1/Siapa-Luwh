@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 import fs from 'fs'
 
 let handler = async (m, { conn, usedPrefix }) => {
-    let res = await fetch('https://recoders-area.caliph.repl.co/api/husbu?apikey=FreeApi')
+    let res = await fetch('https://melcanz.com/husbu?&apikey=melcantik')
     if (!res.ok) throw await res.text()
     let json = await res.json()
     if (!json.url) throw 'Error!'
