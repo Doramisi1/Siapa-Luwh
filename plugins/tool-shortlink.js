@@ -46,7 +46,7 @@ conn.reply(m.chat, `💌 *Link:* ${shorturl.replace('\/','/')}`,m)
 }
 //------------
 if (args[1] == "bitly") {
-	let bit = await fetch(`https://api.xteam.xyz/shorturl/bitly?url=${args[0]}&APIKEY=YOURAPIKEY`)
+	let bit = await fetch(`https://api.xteam.xyz/shorturl/bitly?url=${args[0]}&APIKEY=ebb6251cc00f9c63`)
 	let bitly = await bit.json()
 	let { result } = bitly
 	let { link } = result
