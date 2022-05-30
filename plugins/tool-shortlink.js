@@ -27,11 +27,12 @@ if (!args[1]) return conn.sendMessage(m.chat, listMessage)
 
 //TINY
 if (args[1] == "tinyurl") {
-	let res = await fetch(`https://hardianto.xyz/api/short/tinyurl?url=${args[0]}&apikey=hardianto`)
+	let res = await fetch(`https://api.xteam.xyz/shorturl/tinyurl?url=${args[0]}&APIKEY=ebb6251cc00f9c63`)
     let json = await res.json()
     let { result } = await json
+    let { link } = result
 m.reply('_*Prosses...*_')
-conn.reply(m.chat, `💌 *Link:* ${result}`,m)
+conn.reply(m.chat, `💌 *Link:* ${link}`,m)
 }
 //--------------
 
