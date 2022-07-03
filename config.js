@@ -66,12 +66,12 @@ global.nameown = 'Gak perlu tau'
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6285608625102', 'Rama Agung', true]
-  ['6287877173955', 'Ferdiz-Afk', true]
-  ['6283802603905', 'ddde', true]
-  ['6283195893959', 'dgfs', true]
-  ['6281368176386', 'ddds', true]
-  ['6281575886399', 'sgshs', true]
+  ['6285608625102', 'Rama Agung', true],
+  ['6287877173955', 'Ferdiz-Afk', true],
+  ['6283802603905', 'efa', true],
+  ['6283195893959', 'sisi', true],
+  ['6281368176386', 'dira', true],
+  ['6281575886399', 'beni', true],
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
