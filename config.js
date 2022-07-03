@@ -68,13 +68,10 @@ global.nameown = 'Gak perlu tau'
 global.owner = [
   ['6285608625102', 'Rama Agung', true],
   ['6282351319893', 'Muhimmah Putri', true],
-  ['6283847909854', 'Zaky Rashif', true],
   ['6287877173955', 'Ferdiz-Afk', true],
-  ['6285878313791', 'vcs', true],
   ['6281220670449', 'add', true],
   ['6283802603905', 'ddde', true],
   ['62083195893959', 'dgf,' true],
-  ['62887435047326', 'ddd,' true],
   ['6281368176386', 'dd,' true],
   ['6281575886399', 'sgsh,' true]
   // [number, dia creator/owner?, dia developer?]
