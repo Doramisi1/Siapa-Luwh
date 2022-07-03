@@ -57,11 +57,11 @@ global.ppulsa2 = '085608625102'
 global.psaweria = 'https://saweria.com/LeonGanz'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '62895410472842'
-global.nomorown = '6285608625102'
-global.nomorpart = '6282351319893'
-global.namebot = 'Yui - Chan'
-global.nameown = 'Rama -Agung'
+global.nomorbot = '62895410472842','6285878313791','6281220670449','6283802603905' , '62083195893959' , '62887435047326' , '6281368176386' , '6281575886399'
+global.nomorown = '6285608625102','6285878313791','6281220670449','6283802603905' , '62083195893959' , '62887435047326' , '6281368176386' , '6281575886399'
+global.nomorpart = '6282351319893','6285878313791','6281220670449','6283802603905' , '62083195893959' , '62887435047326' , '6281368176386' , '6281575886399'
+global.namebot = 'PXG_ESPORTS'
+global.nameown = 'Gak perlu tau'
 
 
 /*============== STAFF ==============*/
@@ -69,7 +69,14 @@ global.owner = [
   ['6285608625102', 'Rama Agung', true],
   ['6282351319893', 'Muhimmah Putri', true],
   ['6283847909854', 'Zaky Rashif', true],
-  ['6287877173955', 'Ferdiz-Afk', true]
+  ['6287877173955', 'Ferdiz-Afk', true],
+  ['6285878313791', 'vcs', true],
+  ['6281220670449', 'add', true],
+  ['6283802603905', 'ddde', true],
+  ['62083195893959', 'dgf,' true],
+  ['62887435047326', 'ddd,' true],
+  ['6281368176386', 'dd,' true],
+  ['6281575886399', 'sgsh,' true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -116,13 +123,13 @@ global.APIKeys = { // APIKey Here
 
 
 /*============== WATERMARK ==============*/
-global.wm = '                「 Yui - Chan 」' //Main Watermark
-global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘Yui - Chan ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = '⫹⫺ Yui - Chan '
+global.wm = '                「 PXG_ESPORTS 」' //Main Watermark
+global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘•PXG- CHAN• ˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
+global.wm3 = '⫹⫺ SKY - Chan '
 global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = `⫹⫺ WhatsApp Bot | By LeonGanz`
-global.author = '                「 Yui - Chan  あ⁩ 」'
+global.titlebot = `⫹⫺ WhatsApp Bot | By Sky-gans`
+global.author = '                「 PGX -ESPOTRS   あ⁩ 」'
 
 
 /*============== LOGO ==============*/
@@ -189,8 +196,8 @@ global.lolm = 'Ⓛ'
 global.htjava = '⫹⫺' //hiasan Doang :v
 
 /*============== STICKER WM ==============*/
-global.stickpack = 'Yui - Chan'
-global.stickauth = `By ©LeonGanz`
+global.stickpack = 'SXG - Chan'
+global.stickauth = `By ©SKY•Ganz`
 
 global.multiplier = 38 // The higher, The harder levelup
 
